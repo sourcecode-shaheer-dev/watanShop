@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Watan Shop</title>
+  <style>
+    :root{
+      --bg:#ffffff; --card:#f8f9fb; --text:#0f1724; --muted:#6b7280; --accent:#1f7a4c;
+      --glass: rgba(255,255,255,0.6);
+    }
+    [data-theme="dark"]{
+      --bg:#0b1220; --card:#07101a; --text:#e6eef6; --muted:#93a3b6; --accent:#7bd79a;
+      --glass: rgba(0,0,0,0.45);
+    }
+
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,var(--bg), #eef6f1 120%); color:var(--text);}
+
+    .container{
+      max-width:1100px;margin:32px auto;padding:24px;display:grid;grid-template-columns: 260px 1fr;gap:24px;
+    }
+
+    /* Left nav */
+    .toc{
+      position:sticky;top:24px;background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(12,20,30,0.06);
+      height:fit-content;min-height:220px;backdrop-filter: blur(6px);
+    }
+    .brand{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+    .logo{
+      width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#e6f7ec);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;
+      font-size:20px;box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    }
+    .toc h4{margin:0 0 6px 0;font-size:14px}
+    .search{
+      display:flex;gap:8px;margin-bottom:12px;
+    }
+    .search input{flex:1;padding:8px 10px;border-radius:8px;border:1px solid #d6dbe0;background:transparent;color:var(--text)}
+    .toc a{display:block;padding:8px 10px;border-radius:8px;color:var(--text);text-decoration:none;margin:6px 0;font-size:14px}
+    .toc a:hover{background:rgba(0,0,0,0.04)}
+    .tiny{font-size:12px;color:var(--muted);}
+
+    /* Content */
+    .content{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 10px 30px rgba(12,20,30,0.06)}
+    h1{margin-top:0;font-size:26px}
+    .meta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+    .meta .pill{padding:8px 12px;background:var(--glass);border-radius:999px;border:1px solid rgba(0,0,0,0.03);font-weight:600;font-size:13px}
+    section.policy-section{margin-bottom:18px}
+    section.policy-section h2{font-size:18px;margin:8px 0}
+    section.policy-section p{color:var(--muted);line-height:1.6}
+    .controls{display:flex;gap:10px;margin-left:auto}
+    .btn{
+      background:var(--accent);color:#07221b;border:none;padding:8px 12px;border-radius:8px;font-weight:600;cursor:pointer;
+      box-shadow:0 6px 14px rgba(31,122,76,0.12);
+    }
+    .btn.secondary{background:transparent;border:1px solid rgba(0,0,0,0.06);color:var(--text);box-shadow:none}
+    .row{display:flex;align-items:center;gap:12px}
+
+    /* Collapsible */
+    details{background:transparent;padding:12px;border-radius:8px}
+    details summary{cursor:pointer;font-weight:600;list-style:none;outline:none}
+    details[open] summary::after{content:"▲";float:right}
+    details summary::after{content:"▼";float:right;color:var(--muted)}
+    details p{margin:10px 0;color:var(--muted)}
+
+    /* Footer small */
+    .small{font-size:13px;color:var(--muted);margin-top:18px}
+
+    /* Cookie banner */
+    .cookie-banner{
+      position:fixed;left:20px;right:20px;bottom:20px;background:var(--card);border-radius:12px;padding:14px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;box-shadow:0 18px 40px rgba(2,8,23,0.18)
+    }
+    .cookie-banner .msg{color:var(--muted);max-width:70%}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .container{grid-template-columns:1fr; padding:16px}
+      .toc{display:flex;order:2;margin-top:12px}
+      .content{order:1}
+      .cookie-banner{left:12px;right:12px}
+      .controls{flex-wrap:wrap}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="page">
+  <aside class="toc" aria-labelledby="toc-heading">
+    <div class="brand" aria-hidden="true">
+      <div class="logo" title="Watan Shop">W</div>
+      <div>
+        <strong>Watan Shop</strong>
+        <div class="tiny">Privacy & Data</div>
+      </div>
+    </div>
+
+    <h4 id="toc-heading">On this page</h4>
+    <div class="search" role="search">
+      <input id="toc-search" type="search" placeholder="Search sections..." aria-label="Search privacy sections" />
+    </div>
+
+    <nav id="toc-links" aria-label="Table of contents">
+      <a href="#intro">Introduction</a>
+      <a href="#info-collect">Information We Collect</a>
+      <a href="#use">How We Use Your Information</a>
+      <a href="#sharing">Data Sharing & Disclosure</a>
+      <a href="#security">Data Security</a>
+      <a href="#rights">Your Rights</a>
+      <a href="#third-parties">Third-Party Services</a>
+      <a href="#cookies">Cookies & Tracking</a>
+      <a href="#retention">Data Retention</a>
+      <a href="#changes">Changes to Policy</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div style="margin-top:14px" class="tiny">Quick actions</div>
+    <div style="display:flex;gap:8px;margin-top:8px">
+      <button class="btn" id="printBtn" title="Print this policy">Print</button>
+      <button class="btn secondary" id="downloadBtn" title="Download policy text">Download</button>
+    </div>
+
+    <div class="tiny" style="margin-top:12px">Theme</div>
+    <div style="display:flex;gap:8px;margin-top:8px">
+      <button id="themeToggle" class="btn secondary" title="Toggle dark mode">Toggle Dark</button>
+    </div>
+  </aside>
+
+  <main class="content" id="content" role="main">
+    <div style="display:flex;align-items:center;gap:16px">
+      <div>
+        <h1>Privacy Policy</h1>
+        <div class="tiny">Last updated: <strong id="lastUpdated">[Insert Date]</strong></div>
+      </div>
+
+      <div style="margin-left:auto" class="row controls">
+        <div class="pill meta-item tiny">Watan Shop</div>
+        <div class="pill meta-item tiny">App Privacy</div>
+      </div>
+    </div>
+
+    <p class="small">Welcome to <strong>Watan Shop</strong> (“we,” “our,” or “us”). Your privacy matters — this page explains what we collect, why, and how you can control your information when using the Watan Shop mobile app and related services.</p>
+
+    <section id="intro" class="policy-section">
+      <h2>1. Introduction</h2>
+      <p>We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you access or use Watan Shop (the “App”). Please read this policy carefully. By using the App you accept the practices described in this policy.</p>
+    </section>
+
+    <section id="info-collect" class="policy-section">
+      <h2>2. Information We Collect</h2>
+      <details>
+        <summary>Personal Information</summary>
+        <p>When you register or make a purchase, we may collect:</p>
+        <ul>
+          <li>Full name</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>Shipping and billing address</li>
+          <li>Payment information (processed securely through third-party providers)</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Non-Personal Information</summary>
+        <p>We may also collect:</p>
+        <ul>
+          <li>Device information (model, OS version, unique device identifiers)</li>
+          <li>App usage data and interaction statistics</li>
+          <li>Location data (if you enable location services)</li>
+          <li>Cookies and similar tracking technologies</li>
+        </ul>
+      </details>
+
+    </section>
+
+    <section id="use" class="policy-section">
+      <h2>3. How We Use Your Information</h2>
+      <p>We use the information we collect for the following purposes:</p>
+      <ul>
+        <li>Process and fulfill orders, and manage transactions.</li>
+        <li>Provide customer support and respond to inquiries.</li>
+        <li>Send order updates, promotions, or app notifications (you may opt out).</li>
+        <li>Improve the app’s performance and user experience.</li>
+        <li>Detect and prevent fraud and protect the security of users.</li>
+      </ul>
+    </section>
+
+    <section id="sharing" class="policy-section">
+      <h2>4. Data Sharing and Disclosure</h2>
+      <p>We do not sell or rent your personal information. We may share data in a limited set of situations:</p>
+      <ul>
+        <li><strong>Service Providers:</strong> Trusted third-party vendors (payment processors, delivery partners, analytics providers) who help operate our services.</li>
+        <li><strong>Legal Requirements:</strong> When required by law, or to respond to lawful requests by public authorities.</li>
+        <li><strong>Business Transfers:</strong> In the event of a merger, sale, or transfer of assets, personal data may be transferred as part of the transaction.</li>
+      </ul>
+    </section>
+
+    <section id="security" class="policy-section">
+      <h2>5. Data Security</h2>
+      <p>We implement reasonable technical, administrative, and organizational measures to help protect your personal information against unauthorized access, disclosure, alteration, or destruction. However, no system can be completely secure — please also take measures to protect your account (e.g., choose a strong password).</p>
+    </section>
+
+    <section id="rights" class="policy-section">
+      <h2>6. Your Rights</h2>
+      <p>Depending on your jurisdiction, you may have rights to access, correct, delete, or restrict the processing of your personal data. To exercise these rights, please contact us at the details below. We will respond within applicable legal timeframes.</p>
+    </section>
+
+    <section id="third-parties" class="policy-section">
+      <h2>7. Third-Party Services</h2>
+      <p>Our App may use third-party services (e.g., analytics SDKs, payment processors). These services have their own privacy policies — we recommend reviewing them to understand how they collect and use your data. Examples include payment gateways and delivery partners.</p>
+    </section>
+
+    <section id="cookies" class="policy-section">
+      <h2>8. Cookies and Tracking Technologies</h2>
+      <p>We use cookies and similar technologies to remember user preferences, enable features, and collect analytics to improve the App. You can control cookies via your device settings. Our cookie banner allows you to accept or decline non-essential tracking.</p>
+    </section>
+
+    <section id="retention" class="policy-section">
+      <h2>9. Data Retention</h2>
+      <p>We retain personal data as long as necessary to provide our services, fulfill legal obligations, resolve disputes, and enforce our agreements. Retention periods will vary depending on the type of data and legal requirements.</p>
+    </section>
+
+    <section id="changes" class="policy-section">
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. If we make material changes we will notify users via the App or other prominent notice. The "Last updated" date at the top indicates when the policy was last revised.</p>
+    </section>
+
+    <section id="contact" class="policy-section">
+      <h2>11. Contact Us</h2>
+      <p>If you have questions or requests regarding this Privacy Policy, please contact us:</p>
+      <ul>
+        <li>Email: <a href="mailto:privacy@watan.shop">privacy@watan.shop</a> (replace with your contact)</li>
+        <li>Address: [Insert mailing address if desired]</li>
+      </ul>
+      <p class="small">This Privacy Policy template is provided for informational purposes and does not constitute legal advice. Consider consulting a qualified attorney to tailor the policy to the specific laws that apply to your business (for example, GDPR, CCPA/CPRA, or other local regulations).</p>
+    </section>
+
+  </main>
+</div>
+
+<!-- cookie banner -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" style="display:none">
+  <div style="display:flex;gap:12px;align-items:center;flex:1">
+    <div style="width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#e6f7ec);display:flex;align-items:center;justify-content:center;color:#07221b;font-weight:700">W</div>
+    <div>
+      <div style="font-weight:700">We use cookies</div>
+      <div class="msg">Watan Shop uses cookies to personalize your experience and improve the app. By accepting, you agree to our use of non-essential cookies.</div>
+    </div>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <button id="acceptCookies" class="btn">Accept</button>
+    <button id="declineCookies" class="btn secondary">Decline</button>
+  </div>
+</div>
+
+<script>
+  // ---------- Utility & initialization ----------
+  const storage = window.localStorage;
+  const COOKIE_KEY = 'watan.cookies.accepted';
+  const THEME_KEY = 'watan.theme';
+  const lastUpdatedEl = document.getElementById('lastUpdated');
+  const defaultDate = '[Insert Date]';
+  if (lastUpdatedEl && lastUpdatedEl.textContent.trim() === '[Insert Date]') {
+    // If you want, set a default date here programmatically:
+    // lastUpdatedEl.textContent = new Date().toLocaleDateString();
+    lastUpdatedEl.textContent = defaultDate;
+  }
+
+  // Show cookie banner if not accepted
+  function updateCookieBanner() {
+    const banner = document.getElementById('cookieBanner');
+    const accepted = storage.getItem(COOKIE_KEY);
+    if (!accepted) banner.style.display = 'flex';
+    else banner.style.display = 'none';
+  }
+  updateCookieBanner();
+
+  // Accept / Decline cookie actions
+  document.getElementById('acceptCookies').addEventListener('click', () => {
+    storage.setItem(COOKIE_KEY, 'true');
+    updateCookieBanner();
+  });
+  document.getElementById('declineCookies').addEventListener('click', () => {
+    storage.setItem(COOKIE_KEY, 'false');
+    updateCookieBanner();
+  });
+
+  // Print button
+  document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+  // Download button (download policy as .txt)
+  document.getElementById('downloadBtn').addEventListener('click', () => {
+    const content = document.getElementById('content').innerText;
+    const blob = new Blob([content], {type: 'text/plain;charset=utf-8'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Watan_Shop_Privacy_Policy.txt';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  });
+
+  // Theme toggle
+  const page = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  function setTheme(t){
+    if(t === 'dark'){ page.setAttribute('data-theme','dark'); storage.setItem(THEME_KEY,'dark'); }
+    else { page.removeAttribute('data-theme'); storage.setItem(THEME_KEY,'light'); }
+  }
+  // init theme
+  const savedTheme = storage.getItem(THEME_KEY) || 'light';
+  setTheme(savedTheme === 'dark' ? 'dark' : 'light');
+  themeToggle.addEventListener('click', () => {
+    const now = page.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    setTheme(now);
+  });
+
+  // Table of contents search/filter
+  const tocLinks = document.getElementById('toc-links');
+  const search = document.getElementById('toc-search');
+  search.addEventListener('input', (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    const anchors = tocLinks.querySelectorAll('a');
+    anchors.forEach(a => {
+      const text = a.textContent.toLowerCase();
+      a.style.display = text.includes(q) ? 'block' : 'none';
+    });
+  });
+
+  // Smooth scroll for TOC links
+  tocLinks.addEventListener('click', (ev) => {
+    if(ev.target.tagName === 'A'){
+      ev.preventDefault();
+      const id = ev.target.getAttribute('href').slice(1);
+      const target = document.getElementById(id);
+      if(target){
+        target.scrollIntoView({behavior:'smooth',block:'start'});
+        // open any details parent
+        const details = target.querySelector('details');
+        if(details) details.open = true;
+      }
+      // update focus for accessibility
+      target.setAttribute('tabindex','-1');
+      target.focus();
+    }
+  });
+
+  // Accessibility: allow keyboard to close cookie banner with Esc
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape'){
+      const banner = document.getElementById('cookieBanner');
+      if(banner.style.display === 'flex'){
+        banner.style.display = 'none';
+      }
+    }
+  });
+
+  // Make internal anchors focusable when navigated
+  document.querySelectorAll('.content a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if(el) el.scrollIntoView({behavior:'smooth'});
+    });
+  });
+
+  // keyboard shortcuts (optional helpers)
+  document.addEventListener('keydown', (e) => {
+    // ctrl/cmd + p -> print
+    if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'p'){
+      e.preventDefault();
+      window.print();
+    }
+  });
+
+  // optional: highlight TOC item when scrolling
+  const sections = Array.from(document.querySelectorAll('main section'));
+  function highlightTOC(){
+    let idx = sections.findIndex(s => {
+      const rect = s.getBoundingClientRect();
+      return rect.top >= 0 && rect.top < window.innerHeight/2;
+    });
+    if(idx === -1) idx = sections.length - 1;
+    tocLinks.querySelectorAll('a').forEach(a => a.style.fontWeight = 'normal');
+    const id = sections[idx] ? sections[idx].id : null;
+    if(id){
+      const link = tocLinks.querySelector(`a[href="#${id}"]`);
+      if(link) link.style.fontWeight = '700';
+    }
+  }
+  window.addEventListener('scroll', highlightTOC, {passive:true});
+  highlightTOC();
+
+  // Small helper: replace placeholders in page text if you set attributes
+  // Example: document.body.dataset.updated = '2025-11-05'; // then code below will set it
+  (function applyPlaceholders(){
+    const updated = document.body.dataset.updated;
+    if(updated && lastUpdatedEl) lastUpdatedEl.textContent = updated;
+    const contact = document.body.dataset.contact;
+    if(contact){
+      document.querySelectorAll('a[href^="mailto:"]').forEach(a => a.href = 'mailto:'+contact);
+      document.querySelectorAll('a[href^="mailto:"]')[0].textContent = contact;
+    }
+  })();
+
+</script>
+</body>
+</html>
